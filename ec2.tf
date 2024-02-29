@@ -47,7 +47,7 @@ resource "aws_security_group_rule" "allow_egress_controller" {
   security_group_id = aws_security_group.worker.id
 }
 
-Example resource for connecting to through boundary over SSH
+#Example resource for connecting to through boundary over SSH
 resource "aws_instance" "target" {
   count                         = var.num_targets
   ami                           = data.aws_ami.ubuntu.id
